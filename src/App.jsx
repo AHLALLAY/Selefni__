@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Connexion from "./pages/connexion"
+import Dashboard from "./pages/dashboard"
 import Home from "./pages/home"
 import Layout from "./layouts/layouts"
 import Simulation from "./pages/simulation"
@@ -13,6 +14,7 @@ function App() {
             <Route path="/" index element={<Home/>}/>
             <Route path="/simulation" element={<Simulation/>}/>
             <Route path="/connexion" element={<Connexion/>}/>
+            <Route path="/admin/dashboard" element={<Dashboard/>}/>
           </Route>
         </Routes>
     </>
