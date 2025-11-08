@@ -1,0 +1,645 @@
+[
+  {
+    "Type": "epic",
+    "Clé": "SAL-1",
+    "Résumé": "Configuration et Infrastructure Technique",
+    "Etat": "EN COURS",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-2",
+        "Résumé": "Configuration de l'environnement de développement",
+        "Etat": "TERMINÉ(E)",
+        "branche": "git checkout -b SAL-2-configuration-de-lenvironnement-de-developpement",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-3",
+            "Résumé": "Initialiser le projet React avec Vite",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-3 <Initialiser le projet React avec Vite>\"",
+            "push": "git push origin SAL-2-configuration-de-lenvironnement-de-developpement"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-4",
+            "Résumé": "Configurer les outils de développement (ESLint, Prettier optionnel, Tailwind CSS)",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-4 <Configurer les outils de développement (ESLint, Prettier optionnel, Tailwind CSS)>\"",
+            "push": "git push origin SAL-2-configuration-de-lenvironnement-de-developpement"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-5",
+        "Résumé": "Configuration de la structure du projet",
+        "Etat": "TERMINÉ(E)",
+        "branche": "git checkout -b SAL-5-configuration-de-la-structure-du-projet",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-6",
+            "Résumé": "Créer l'architecture de dossiers",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-6 <Créer l'architecture de dossiers>\"",
+            "push": "git push origin SAL-5-configuration-de-la-structure-du-projet"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-7",
+            "Résumé": "Documenter les conventions de nommage (PascalCase pour composants, camelCase pour fonctions)",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-7 <Documenter les conventions de nommage>\"",
+            "push": "git push origin SAL-5-configuration-de-la-structure-du-projet"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-8",
+        "Résumé": "Configuration du routing",
+        "Etat": "TERMINÉ(E)",
+        "branche": "git checkout -b SAL-8-configuration-du-routing",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-9",
+            "Résumé": "Installer et configurer React Router (ou créer un système personnalisé)",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-9 <Installer et configurer React Router>\"",
+            "push": "git push origin SAL-8-configuration-du-routing"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-10",
+            "Résumé": "Créer les composants de navigation (Navbar/Header, liens de navigation, navigation conditionnelle Guest/Admin)",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-10 <Créer les composants de navigation>\"",
+            "push": "git push origin SAL-8-configuration-du-routing"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-11",
+        "Résumé": "Configuration de la gestion d'état",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-11-configuration-de-la-gestion-detat",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-12",
+            "Résumé": "Installer et configurer la solution de gestion d'état (Context API / Redux / Zustand)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-12 <Installer et configurer la solution de gestion d'état>\"",
+            "push": "git push origin SAL-11-configuration-de-la-gestion-detat"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-13",
+        "Résumé": "Configuration du backend mocké (json-server)",
+        "Etat": "TERMINÉ(E)",
+        "branche": "git checkout -b SAL-13-configuration-du-backend-mocke",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-14",
+            "Résumé": "Créer le fichier db.json avec la structure de données",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-14 <Créer le fichier db.json avec la structure de données>\"",
+            "push": "git push origin SAL-13-configuration-du-backend-mocke"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-15",
+            "Résumé": "Configurer json-server et créer les services API",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-15 <Configurer json-server et créer les services API>\"",
+            "push": "git push origin SAL-13-configuration-du-backend-mocke"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-16",
+        "Résumé": "Configuration des styles",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-16-configuration-des-styles",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-17",
+            "Résumé": "Installer et configurer Tailwind CSS",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-17 <Installer et configurer Tailwind CSS>\"",
+            "push": "git push origin SAL-16-configuration-des-styles"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-18",
+            "Résumé": "Créer le système de design de base (couleurs, composants UI de base Button/Card/Input, layout responsive)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-18 <Créer le système de design de base>\"",
+            "push": "git push origin SAL-16-configuration-des-styles"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-19",
+    "Résumé": "Simulation de Crédit (Guest)",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-20",
+        "Résumé": "Création du formulaire de simulation",
+        "Etat": "TERMINÉ(E)",
+        "branche": "git checkout -b SAL-20-creation-du-formulaire-de-simulation",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-21",
+            "Résumé": "Créer le composant de formulaire de simulation avec tous les champs",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-21 <Créer le composant de formulaire de simulation avec tous les champs>\"",
+            "push": "git push origin SAL-20-creation-du-formulaire-de-simulation"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-22",
+            "Résumé": "Implémenter la validation du formulaire (champs requis, min/max, formats, messages d'erreur)",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-22 <Implémenter la validation du formulaire>\"",
+            "push": "git push origin SAL-20-creation-du-formulaire-de-simulation"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-23",
+        "Résumé": "Calculs financiers",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-23-calculs-financiers",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-24",
+            "Résumé": "Créer les fonctions de calcul (mensualité, coût total, TAEG simplifié, gestion frais fixes et assurance)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-24 <Créer les fonctions de calcul>\"",
+            "push": "git push origin SAL-23-calculs-financiers"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-25",
+            "Résumé": "Créer le tableau d'amortissement et l'affichage des résultats",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-25 <Créer le tableau d'amortissement et l'affichage des résultats>\"",
+            "push": "git push origin SAL-23-calculs-financiers"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-26",
+        "Résumé": "Enregistrement automatique des simulations",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-26-enregistrement-automatique-des-simulations",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-27",
+            "Résumé": "Créer la logique d'enregistrement et l'intégrer dans le flux",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-27 <Créer la logique d'enregistrement et l'intégrer dans le flux>\"",
+            "push": "git push origin SAL-26-enregistrement-automatique-des-simulations"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-28",
+    "Résumé": "Demande de Crédit (Guest)",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-29",
+        "Résumé": "Formulaire de demande de crédit",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-29-formulaire-de-demande-de-credit",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-30",
+            "Résumé": "Créer le composant de formulaire de demande et lier à la simulation",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-30 <Créer le composant de formulaire de demande et lier à la simulation>\"",
+            "push": "git push origin SAL-29-formulaire-de-demande-de-credit"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-31",
+            "Résumé": "Implémenter la validation (champs requis, format email/téléphone, affichage erreurs)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-31 <Implémenter la validation du formulaire de demande>\"",
+            "push": "git push origin SAL-29-formulaire-de-demande-de-credit"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-32",
+        "Résumé": "Soumission et accusé de réception",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-32-soumission-et-accuse-de-reception",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-33",
+            "Résumé": "Créer l'entité application et le composant d'accusé de réception",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-33 <Créer l'entité application et le composant d'accusé de réception>\"",
+            "push": "git push origin SAL-32-soumission-et-accuse-de-reception"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-34",
+        "Résumé": "Export PDF",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-34-export-pdf",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-35",
+            "Résumé": "Installer bibliothèque PDF et créer la fonction d'export",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-35 <Installer bibliothèque PDF et créer la fonction d'export>\"",
+            "push": "git push origin SAL-34-export-pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-36",
+    "Résumé": "Espace Administrateur",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-37",
+        "Résumé": "Tableau de bord des demandes",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-37-tableau-de-bord-des-demandes",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-38",
+            "Résumé": "Créer le composant de tableau de bord avec fonctionnalités de recherche/filtrage/tri",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-38 <Créer le composant de tableau de bord avec fonctionnalités de recherche/filtrage/tri>\"",
+            "push": "git push origin SAL-37-tableau-de-bord-des-demandes"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-39",
+        "Résumé": "Fiche détaillée de demande",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-39-fiche-detaille-de-demande",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-40",
+            "Résumé": "Créer la page de détail avec historique et notes",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-40 <Créer la page de détail avec historique et notes>\"",
+            "push": "git push origin SAL-39-fiche-detaille-de-demande"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-41",
+        "Résumé": "Gestion des statuts de demande",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-41-gestion-des-statuts-de-demande",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-42",
+            "Résumé": "Créer l'interface de changement de statut avec mise à jour historique",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-42 <Créer l'interface de changement de statut avec mise à jour historique>\"",
+            "push": "git push origin SAL-41-gestion-des-statuts-de-demande"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-43",
+        "Résumé": "Gestion des notes internes",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-43-gestion-des-notes-internes",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-44",
+            "Résumé": "Créer le composant d'ajout et sauvegarde de notes",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-44 <Créer le composant d'ajout et sauvegarde de notes>\"",
+            "push": "git push origin SAL-43-gestion-des-notes-internes"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-45",
+        "Résumé": "Marquer une demande comme prioritaire",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-45-marquer-une-demande-comme-prioritaire",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-46",
+            "Résumé": "Ajouter fonctionnalité prioritaire",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-46 <Ajouter fonctionnalité prioritaire>\"",
+            "push": "git push origin SAL-45-marquer-une-demande-comme-prioritaire"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-47",
+        "Résumé": "Export CSV",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-47-export-csv",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-48",
+            "Résumé": "Créer la fonction d'export CSV et ajouter le bouton",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-48 <Créer la fonction d'export CSV et ajouter le bouton>\"",
+            "push": "git push origin SAL-47-export-csv"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-49",
+    "Résumé": "Système de Notifications",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-50",
+        "Résumé": "Création de notification lors d'une nouvelle demande",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-50-creation-de-notification-lors-dune-nouvelle-demande",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-51",
+            "Résumé": "Créer le modèle de notification et intégrer dans le flux",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-51 <Créer le modèle de notification et intégrer dans le flux>\"",
+            "push": "git push origin SAL-50-creation-de-notification-lors-dune-nouvelle-demande"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-52",
+        "Résumé": "Affichage et gestion des notifications",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-52-affichage-et-gestion-des-notifications",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-53",
+            "Résumé": "Créer le badge de notification (cloche) et le dropdown/panneau",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-53 <Créer le badge de notification (cloche) et le dropdown/panneau>\"",
+            "push": "git push origin SAL-52-affichage-et-gestion-des-notifications"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-54",
+            "Résumé": "Implémenter la gestion des notifications (marquer lue, navigation)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-54 <Implémenter la gestion des notifications (marquer lue, navigation)>\"",
+            "push": "git push origin SAL-52-affichage-et-gestion-des-notifications"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-55",
+    "Résumé": "Validation et Gestion des Erreurs",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-56",
+        "Résumé": "Validation des formulaires et gestion des erreurs",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-56-validation-des-formulaires-et-gestion-des-erreurs",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-57",
+            "Résumé": "Créer la validation côté client et composant de message d'erreur réutilisable",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-57 <Créer la validation côté client et composant de message d'erreur réutilisable>\"",
+            "push": "git push origin SAL-56-validation-des-formulaires-et-gestion-des-erreurs"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-58",
+            "Résumé": "Gérer les erreurs API et créer composant d'alerte",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-58 <Gérer les erreurs API et créer composant d'alerte>\"",
+            "push": "git push origin SAL-56-validation-des-formulaires-et-gestion-des-erreurs"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-59",
+        "Résumé": "Gestion des exceptions",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-59-gestion-des-exceptions",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-60",
+            "Résumé": "Implémenter try/catch et créer Error Boundary React",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-60 <Implémenter try/catch et créer Error Boundary React>\"",
+            "push": "git push origin SAL-59-gestion-des-exceptions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-61",
+    "Résumé": "Documentation Technique",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-62",
+        "Résumé": "Documentation de l'architecture et guide d'installation",
+        "Etat": "TERMINÉ(E)",
+        "branche": "git checkout -b SAL-62-documentation-de-larchitecture-et-guide-dinstallation",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-63",
+            "Résumé": "Documenter la structure du projet et l'architecture technique",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-63 <Documenter la structure du projet et l'architecture technique>\"",
+            "push": "git push origin SAL-62-documentation-de-larchitecture-et-guide-dinstallation"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-64",
+            "Résumé": "Créer le guide d'installation et de configuration",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-64 <Créer le guide d'installation et de configuration>\"",
+            "push": "git push origin SAL-62-documentation-de-larchitecture-et-guide-dinstallation"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-65",
+        "Résumé": "Documentation des dépendances et commentaires code",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-65-documentation-des-dependances-et-commentaires-code",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-66",
+            "Résumé": "Lister et documenter les dépendances",
+            "Etat": "TERMINÉ(E)",
+            "commit": "git commit -m \"SAL-66 <Lister et documenter les dépendances>\"",
+            "push": "git push origin SAL-65-documentation-des-dependances-et-commentaires-code"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-67",
+            "Résumé": "Commenter le code (fonctions complexes, composants, hooks)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-67 <Commenter le code (fonctions complexes, composants, hooks)>\"",
+            "push": "git push origin SAL-65-documentation-des-dependances-et-commentaires-code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "epic",
+    "Clé": "SAL-68",
+    "Résumé": "Fonctionnalités Bonus (Optionnel)",
+    "Etat": "À FAIRE",
+    "user_stories": [
+      {
+        "Type": "user_story",
+        "Clé": "SAL-69",
+        "Résumé": "DataTable personnalisé générique",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-69-datatable-personnalise-generique",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-70",
+            "Résumé": "Créer le composant DataTable générique et configurable",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-70 <Créer le composant DataTable générique et configurable>\"",
+            "push": "git push origin SAL-69-datatable-personnalise-generique"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-71",
+            "Résumé": "Utiliser le DataTable dans le projet (demandes Admin, simulations si nécessaire)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-71 <Utiliser le DataTable dans le projet>\"",
+            "push": "git push origin SAL-69-datatable-personnalise-generique"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-72",
+        "Résumé": "Système de routing personnalisé",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-72-systeme-de-routing-personnalise",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-73",
+            "Résumé": "Créer le router personnalisé et les composants de navigation",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-73 <Créer le router personnalisé et les composants de navigation>\"",
+            "push": "git push origin SAL-72-systeme-de-routing-personnalise"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-74",
+            "Résumé": "Intégrer dans l'application (remplacer React Router, tester toutes routes)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-74 <Intégrer dans l'application (remplacer React Router, tester toutes routes)>\"",
+            "push": "git push origin SAL-72-systeme-de-routing-personnalise"
+          }
+        ]
+      },
+      {
+        "Type": "user_story",
+        "Clé": "SAL-75",
+        "Résumé": "Solution équivalente à React Query",
+        "Etat": "À FAIRE",
+        "branche": "git checkout -b SAL-75-solution-equivalente-a-react-query",
+        "tasks": [
+          {
+            "Type": "task",
+            "Clé": "SAL-76",
+            "Résumé": "Créer les hooks de fetching personnalisés (useFetch/useQuery, useMutation)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-76 <Créer les hooks de fetching personnalisés (useFetch/useQuery, useMutation)>\"",
+            "push": "git push origin SAL-75-solution-equivalente-a-react-query"
+          },
+          {
+            "Type": "task",
+            "Clé": "SAL-77",
+            "Résumé": "Intégrer dans l'application (remplacer appels fetch directs, tester cache et mise à jour)",
+            "Etat": "À FAIRE",
+            "commit": "git commit -m \"SAL-77 <Intégrer dans l'application (remplacer appels fetch directs, tester cache et mise à jour)>\"",
+            "push": "git push origin SAL-75-solution-equivalente-a-react-query"
+          }
+        ]
+      }
+    ]
+  }
+]

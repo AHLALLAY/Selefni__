@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋 Planification JIRA - Salefni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        // Afficher la date de mise à jour
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateElement = document.getElementById('date-update');
+            if (dateElement) {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                dateElement.textContent = now.toLocaleString('fr-FR', options);
+            }
+        });
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold">📋 Planification JIRA - Salefni</h1>
+            <p class="text-purple-100 mt-2">Solution de Simulation et Gestion des Crédits en Ligne</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8 max-w-6xl">
+        
+        <!-- Résumé du Projet -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg shadow-xl p-8 text-white">
+                <h2 class="text-3xl font-bold mb-6 text-center">📊 Résumé du Projet Salefni</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold mb-2">10</div>
+                        <div class="text-lg font-semibold">✅ Tâches Terminées</div>
+                        <div class="text-sm mt-2 text-blue-100">Progression continue</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold mb-2">1</div>
+                        <div class="text-lg font-semibold">🔄 Tâches En Cours</div>
+                        <div class="text-sm mt-2 text-blue-100">En développement</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold mb-2">30</div>
+                        <div class="text-lg font-semibold">❌ Tâches À Faire</div>
+                        <div class="text-sm mt-2 text-blue-100">À planifier</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold mb-2">24%</div>
+                        <div class="text-lg font-semibold">📈 Progression</div>
+                        <div class="text-sm mt-2 text-blue-100">10/41 tâches</div>
+                    </div>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                        <h3 class="font-bold text-lg mb-2">🎯 Epic 1: Configuration</h3>
+                        <p class="text-sm">8/10 tâches terminées</p>
+                        <div class="w-full bg-white/20 rounded-full h-2 mt-2">
+                            <div class="bg-green-300 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                        <h3 class="font-bold text-lg mb-2">🧮 Epic 2: Simulation</h3>
+                        <p class="text-sm">2/5 tâches terminées</p>
+                        <div class="w-full bg-white/20 rounded-full h-2 mt-2">
+                            <div class="bg-green-300 h-2 rounded-full" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                        <h3 class="font-bold text-lg mb-2">📚 Epic 7: Documentation</h3>
+                        <p class="text-sm">3/4 tâches terminées</p>
+                        <div class="w-full bg-white/20 rounded-full h-2 mt-2">
+                            <div class="bg-green-300 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-blue-100">Dernière mise à jour : <span id="date-update"></span></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Epic 1 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-purple-500">
+                <h2 class="text-2xl font-bold text-purple-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">🔴 Critique</span>⚙️ Epic 1: Configuration et Infrastructure Technique</h2>
+                
+                <!-- User Story 1.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">💻 User Story 1.1 : Configuration de l'environnement de développement</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> configurer l'environnement de développement
+                        <strong>Afin de</strong> pouvoir commencer à développer l'application</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🚀 Task 1.1.1 : Initialiser le projet React avec Vite ou CRA</p>
+                                <p class="text-gray-600 mt-2">Exécuter la commande d'initialisation et tester que l'application démarre correctement avec build fonctionnel.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🛠️ Task 1.1.2 : Configurer les outils de développement (ESLint, Prettier optionnel, Tailwind CSS)</p>
+                                <p class="text-gray-600 mt-2">Installer et configurer ESLint, Prettier (optionnel) et Tailwind CSS pour assurer la qualité du code et le styling cohérent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 1.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📁 User Story 1.2 : Configuration de la structure du projet</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> structurer le projet selon les bonnes pratiques
+                        <strong>Afin de</strong> maintenir un code organisé et modulaire</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>📂 Task 1.2.1 : Créer l'architecture de dossiers</p>
+                                <p class="text-gray-600 mt-2">Créer les dossiers supplémentaires (components, pages, services, utils, hooks, contexts) et organiser les assets (images, styles).</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📝 Task 1.2.2 : Documenter les conventions de nommage (PascalCase pour composants, camelCase pour fonctions)</p>
+                                <p class="text-gray-600 mt-2">Créer un document définissant les conventions de nommage : PascalCase pour les composants React et camelCase pour les fonctions et variables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 1.3 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🧭 User Story 1.3 : Configuration du routing</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> configurer le système de navigation
+                        <strong>Afin de</strong> permettre la navigation entre les pages</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🧭 Task 1.3.1 : Installer et configurer React Router (ou créer un système personnalisé)</p>
+                                <p class="text-gray-600 mt-2">Installer react-router-dom, créer le Router principal et définir les routes de base (Home, Simulation, Admin).</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🧩 Task 1.3.2 : Créer les composants de navigation (Navbar/Header, liens de navigation, navigation conditionnelle Guest/Admin)</p>
+                                <p class="text-gray-600 mt-2">Développer les composants de navigation avec Navbar/Header, liens de navigation et navigation conditionnelle selon le rôle (Guest/Admin).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 1.4 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🔄 User Story 1.4 : Configuration de la gestion d'état</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> configurer la gestion d'état globale
+                        <strong>Afin de</strong> partager les données entre les composants</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔄 Task 1.4.1 : Installer et configurer la solution de gestion d'état (Context API / Redux / Zustand)</p>
+                                <p class="text-gray-600 mt-2">Installer la solution choisie (Context API / Redux / Zustand), créer les stores/contexts de base (AuthProvider si nécessaire, DataProvider) et envelopper l'application avec les providers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 1.5 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🗄️ User Story 1.5 : Configuration du backend mocké (json-server)</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> configurer json-server
+                        <strong>Afin de</strong> simuler une API backend</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🗄️ Task 1.5.1 : Créer le fichier db.json avec la structure de données</p>
+                                <p class="text-gray-600 mt-2">Définir les schémas de données pour simulations, demandes et notifications dans le fichier db.json.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🔌 Task 1.5.2 : Configurer json-server et créer les services API</p>
+                                <p class="text-gray-600 mt-2">Installer json-server, créer script de démarrage, configurer routes et middlewares (timestamps, tri par défaut) puis créer les services API (simulations: get/post, demandes: get/post/put/patch, notifications: get/post/patch).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 1.6 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🎨 User Story 1.6 : Configuration des styles</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> configurer Tailwind CSS
+                        <strong>Afin de</strong> styliser l'application de manière cohérente</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🎨 Task 1.6.1 : Installer et configurer Tailwind CSS</p>
+                                <p class="text-gray-600 mt-2">Installer les dépendances Tailwind CSS, configurer tailwind.config.js et ajouter les directives dans le CSS principal.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800 mr-2">🔄 En cours</span>🎭 Task 1.6.2 : Créer le système de design de base (couleurs, composants UI de base Button/Card/Input, layout responsive)</p>
+                                <p class="text-gray-600 mt-2">Définir la palette de couleurs, créer les composants UI de base (Button, Card, Input) et établir le layout responsive pour l'application.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 2 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-green-500">
+                <h2 class="text-2xl font-bold text-green-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">🔴 Critique</span>🧮 Epic 2: Simulation de Crédit (Guest)</h2>
+                
+                <!-- User Story 2.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📝 User Story 2.1 : Création du formulaire de simulation</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> visiteur (Guest) 
+                        <strong>Je veux</strong> remplir un formulaire pour simuler un crédit
+                        <strong>Afin de</strong> connaître les conditions de financement</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>📝 Task 2.1.1 : Créer le composant de formulaire de simulation avec tous les champs</p>
+                                <p class="text-gray-600 mt-2">Implémenter les champs du formulaire : Type de crédit (select), Métier, Montant, Durée (mois), Taux annuel (%), Frais fixes (optionnel), Assurance % (optionnel).</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>✔️ Task 2.1.2 : Implémenter la validation du formulaire (champs requis, min/max, formats, messages d'erreur)</p>
+                                <p class="text-gray-600 mt-2">Mettre en place la validation avec contraintes sur les champs requis, valeurs min/max, formats de données et messages d'erreur appropriés.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 2.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🔢 User Story 2.2 : Calculs financiers</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> visiteur (Guest) 
+                        <strong>Je veux</strong> voir les résultats de ma simulation
+                        <strong>Afin de</strong> connaître la mensualité et le coût total</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔢 Task 2.2.1 : Créer les fonctions de calcul (mensualité, coût total, TAEG simplifié, gestion frais fixes et assurance)</p>
+                                <p class="text-gray-600 mt-2">Développer les fonctions de calcul pour déterminer la mensualité, le coût total, le TAEG simplifié, avec gestion des frais fixes et de l'assurance.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📊 Task 2.2.2 : Créer le tableau d'amortissement et l'affichage des résultats</p>
+                                <p class="text-gray-600 mt-2">Calculer intérêts/principal par période, créer composant d'affichage avec résumé (total intérêts/principal), afficher mensualité, coût total, TAEG et tableau d'amortissement (pagination optionnelle).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 2.3 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">💾 User Story 2.3 : Enregistrement automatique des simulations</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> système 
+                        <strong>Je veux</strong> enregistrer automatiquement chaque simulation
+                        <strong>Afin de</strong> transmettre les informations aux décideurs</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>💾 Task 2.3.1 : Créer la logique d'enregistrement et l'intégrer dans le flux</p>
+                                <p class="text-gray-600 mt-2">Créer fonction pour sauvegarder dans db.json avec timestamp et gestion d'erreurs, appeler l'API après chaque calcul avec message de confirmation optionnel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 3 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-purple-500">
+                <h2 class="text-2xl font-bold text-purple-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">🔴 Critique</span>📋 Epic 3: Demande de Crédit (Guest)</h2>
+                
+                <!-- User Story 3.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📄 User Story 3.1 : Formulaire de demande de crédit</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> visiteur (Guest) 
+                        <strong>Je veux</strong> créer une demande de crédit à partir d'une simulation
+                        <strong>Afin de</strong> soumettre ma demande de financement</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📄 Task 3.1.1 : Créer le composant de formulaire de demande et lier à la simulation</p>
+                                <p class="text-gray-600 mt-2">Implémenter les champs (Nom, Email avec validation, Téléphone avec validation, Revenu mensuel, Situation pro, Commentaire optionnel), afficher détails de la simulation choisie, passer l'ID et enregistrer la liaison.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>✔️ Task 3.1.2 : Implémenter la validation (champs requis, format email/téléphone, affichage erreurs)</p>
+                                <p class="text-gray-600 mt-2">Valider les champs requis, formats email/téléphone et afficher les messages d'erreur appropriés pour chaque champ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 3.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">✅ User Story 3.2 : Soumission et accusé de réception</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> visiteur (Guest) 
+                        <strong>Je veux</strong> recevoir une confirmation visuelle après soumission
+                        <strong>Afin de</strong> être rassuré que ma demande a été envoyée</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>✅ Task 3.2.1 : Créer l'entité application et le composant d'accusé de réception</p>
+                                <p class="text-gray-600 mt-2">Créer fonction POST demande avec gestion d'erreurs et notification admin (voir Epic 5), créer page/composant confirmation avec message, résumé demande et navigation (retour accueil/nouvelle simulation).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 3.3 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📑 User Story 3.3 : Export PDF</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> visiteur (Guest) 
+                        <strong>Je veux</strong> exporter ma simulation/demande en PDF
+                        <strong>Afin de</strong> conserver une trace de ma demande</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📑 Task 3.3.1 : Installer bibliothèque PDF et créer la fonction d'export</p>
+                                <p class="text-gray-600 mt-2">Installer react-pdf ou jsPDF, créer template PDF, générer PDF avec données simulation/demande et ajouter bouton d'export.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 4 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-red-500">
+                <h2 class="text-2xl font-bold text-red-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">🔴 Critique</span>🛡️ Epic 4: Espace Administrateur</h2>
+                
+                <!-- User Story 4.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📊 User Story 4.1 : Tableau de bord des demandes</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> voir la liste de toutes les demandes
+                        <strong>Afin de</strong> gérer les demandes efficacement</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📊 Task 4.1.1 : Créer le composant de tableau de bord avec fonctionnalités de recherche/filtrage/tri</p>
+                                <p class="text-gray-600 mt-2">Récupérer demandes via API, afficher tableau/liste (nom, email, date, statut), implémenter filtrage par statut (Tous, En attente, En cours, Acceptée, Refusée) avec compteurs, recherche par nom/email en temps réel et tri par date (croissant/décroissant) avec indicateurs visuels et persistance état.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 4.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📋 User Story 4.2 : Fiche détaillée de demande</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> voir les détails complets d'une demande
+                        <strong>Afin de</strong> prendre une décision éclairée</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📋 Task 4.2.1 : Créer la page de détail avec historique et notes</p>
+                                <p class="text-gray-600 mt-2">Récupérer détails demande et simulation associée, afficher informations demandeur et récap simulation, créer composant historique (changements statut avec dates, notes associées) et afficher notes internes (auteur et date).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 4.3 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🔄 User Story 4.3 : Gestion des statuts de demande</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> changer le statut d'une demande
+                        <strong>Afin de</strong> suivre l'avancement du traitement</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔄 Task 4.3.1 : Créer l'interface de changement de statut avec mise à jour historique</p>
+                                <p class="text-gray-600 mt-2">Créer select/dropdown avec statuts disponibles et validation changement autorisé, enregistrer changement dans base de données avec date/heure dans historique et rafraîchir affichage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 4.4 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📝 User Story 4.4 : Gestion des notes internes</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> ajouter des notes internes à une demande
+                        <strong>Afin de</strong> documenter mes observations</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📝 Task 4.4.1 : Créer le composant d'ajout et sauvegarde de notes</p>
+                                <p class="text-gray-600 mt-2">Créer textarea avec bouton envoi et validation note non vide, enregistrer note avec timestamp, associer à demande et afficher dans liste.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 4.5 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">⭐ User Story 4.5 : Marquer une demande comme prioritaire</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> marquer une demande comme prioritaire
+                        <strong>Afin de</strong> la traiter en priorité</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>⭐ Task 4.5.1 : Ajouter fonctionnalité prioritaire</p>
+                                <p class="text-gray-600 mt-2">Ajouter champ dans db.json, créer toggle/bouton, créer badge/indicateur visuel et implémenter tri/filtre prioritaires en premier.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 4.6 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📊 User Story 4.6 : Export CSV</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> exporter les demandes en CSV
+                        <strong>Afin de</strong> analyser les données dans Excel</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📊 Task 4.6.1 : Créer la fonction d'export CSV et ajouter le bouton</p>
+                                <p class="text-gray-600 mt-2">Convertir données en CSV (colonnes importantes, gestion caractères spéciaux), ajouter bouton dans tableau de bord, télécharger fichier et appliquer filtres actifs à l'export.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 5 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-yellow-500">
+                <h2 class="text-2xl font-bold text-yellow-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800 mr-2">🟡 Important</span>🔔 Epic 5: Système de Notifications</h2>
+                
+                <!-- User Story 5.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">➕ User Story 5.1 : Création de notification lors d'une nouvelle demande</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> système 
+                        <strong>Je veux</strong> créer une notification lors d'une nouvelle demande
+                        <strong>Afin de</strong> informer l'administrateur</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔔 Task 5.1.1 : Créer le modèle de notification et intégrer dans le flux</p>
+                                <p class="text-gray-600 mt-2">Définir schéma dans db.json (type, message, date, lu/non lu), intégrer dans création demande, enregistrer notification et associer à demande.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 5.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">👁️ User Story 5.2 : Affichage et gestion des notifications</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> administrateur 
+                        <strong>Je veux</strong> voir et gérer mes notifications
+                        <strong>Afin de</strong> être informé des nouvelles demandes</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔔 Task 5.2.1 : Créer le badge de notification (cloche) et le dropdown/panneau</p>
+                                <p class="text-gray-600 mt-2">Créer icône cloche dans header avec nombre notifications non lues et mise à jour temps réel, récupérer notifications via API, afficher liste, distinguer lues/non lues et afficher date/message.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>👁️ Task 5.2.2 : Implémenter la gestion des notifications (marquer lue, navigation)</p>
+                                <p class="text-gray-600 mt-2">Créer fonction mettre à jour statut, mettre à jour badge, retirer de liste non lues, implémenter redirection vers demande associée au clic et marquer automatiquement lue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 6 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-orange-500">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800 mr-2">🟡 Important</span>🛡️ Epic 6: Validation et Gestion des Erreurs</h2>
+                
+                <!-- User Story 6.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">✔️ User Story 6.1 : Validation des formulaires et gestion des erreurs</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant qu'</strong> utilisateur 
+                        <strong>Je veux</strong> recevoir des messages d'erreur clairs et être informé des erreurs serveur
+                        <strong>Afin de</strong> corriger mes erreurs et comprendre ce qui s'est passé</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>✔️ Task 6.1.1 : Créer la validation côté client et composant de message d'erreur réutilisable</p>
+                                <p class="text-gray-600 mt-2">Valider champs requis, formats (email, téléphone, etc.), valeurs min/max, afficher messages appropriés, créer composant ErrorMessage, gérer différents types d'erreurs et styliser.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>⚠️ Task 6.1.2 : Gérer les erreurs API et créer composant d'alerte</p>
+                                <p class="text-gray-600 mt-2">Intercepter erreurs 404, 500, timeouts, afficher messages utilisateur-friendly, créer composant Alert/Toast, afficher de manière non intrusive et permettre fermeture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 6.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">⚠️ User Story 6.2 : Gestion des exceptions</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> gérer toutes les exceptions possibles
+                        <strong>Afin de</strong> éviter les crashs de l'application</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🛡️ Task 6.2.1 : Implémenter try/catch et créer Error Boundary React</p>
+                                <p class="text-gray-600 mt-2">Gérer erreurs dans services API et calculs financiers avec logger pour debug, créer composant ErrorBoundary, envelopper application et afficher page d'erreur élégante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 7 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-teal-500">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">🟢 Nécessaire</span>📚 Epic 7: Documentation Technique</h2>
+                
+                <!-- User Story 7.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🏗️ User Story 7.1 : Documentation de l'architecture et guide d'installation</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur/futur mainteneur 
+                        <strong>Je veux</strong> comprendre l'architecture et avoir un guide d'installation
+                        <strong>Afin de</strong> maintenir et démarrer rapidement le projet</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>🏗️ Task 7.1.1 : Documenter la structure du projet et l'architecture technique</p>
+                                <p class="text-gray-600 mt-2">Créer diagramme structure dossiers, expliquer organisation code, décrire patterns, décrire flux de données, communication Frontend/Backend et choix techniques.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>📖 Task 7.1.2 : Créer le guide d'installation et de configuration</p>
+                                <p class="text-gray-600 mt-2">Documenter prérequis (Node.js, npm), instructions installation dépendances, démarrage (frontend + json-server), expliquer configuration json-server, Tailwind et variables d'environnement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 7.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📦 User Story 7.2 : Documentation des dépendances et commentaires code</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> connaître les dépendances et que le code soit bien commenté
+                        <strong>Afin de</strong> comprendre les technologies et faciliter la maintenance</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 mr-2">✅ Terminé</span>📦 Task 7.2.1 : Lister et documenter les dépendances</p>
+                                <p class="text-gray-600 mt-2">Lister dépendances principales, expliquer utilité et documenter versions pour chaque dépendance utilisée dans le projet.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>💬 Task 7.2.2 : Commenter le code (fonctions complexes, composants, hooks)</p>
+                                <p class="text-gray-600 mt-2">Ajouter commentaires JSDoc pour fonctions principales, expliquer logique métier complexe, ajouter commentaires dans composants React (props, utilisation) et documenter hooks personnalisés.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Epic 8 -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6 border-l-4 border-pink-500">
+                <h2 class="text-2xl font-bold text-pink-600 mb-4"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 mr-2">🔵 Optionnel</span>🌟 Epic 8: Fonctionnalités Bonus (Optionnel)</h2>
+                
+                <!-- User Story 8.1 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">📊 User Story 8.1 : DataTable personnalisé générique</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> créer un DataTable réutilisable
+                        <strong>Afin de</strong> l'utiliser pour différents types de données</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>📊 Task 8.1.1 : Créer le composant DataTable générique et configurable</p>
+                                <p class="text-gray-600 mt-2">Créer composant avec props génériques, implémenter tri colonnes, recherche/filtrage, pagination, permettre configuration colonnes, actions personnalisées et rendu personnalisé cellules.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔧 Task 8.1.2 : Utiliser le DataTable dans le projet (demandes Admin, simulations si nécessaire)</p>
+                                <p class="text-gray-600 mt-2">Intégrer le composant DataTable dans le tableau de bord Admin pour les demandes et éventuellement pour les simulations si nécessaire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 8.2 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🗺️ User Story 8.2 : Système de routing personnalisé</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> créer un système de routing personnalisé
+                        <strong>Afin de</strong> comprendre comment fonctionne React Router</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🗺️ Task 8.2.1 : Créer le router personnalisé et les composants de navigation</p>
+                                <p class="text-gray-600 mt-2">Créer contexte routing, navigation programmatique, routes dynamiques, gestion paramètres route, créer composants Link et Route personnalisés et gérer 404.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔗 Task 8.2.2 : Intégrer dans l'application (remplacer React Router, tester toutes routes)</p>
+                                <p class="text-gray-600 mt-2">Remplacer React Router par le router personnalisé dans toute l'application et tester toutes les routes pour vérifier le bon fonctionnement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 8.3 -->
+                <div class="mb-6 bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">🔄 User Story 8.3 : Solution équivalente à React Query</h3>
+                    <div class="space-y-2 mb-4 text-gray-700">
+                        <p><strong>En tant que</strong> développeur 
+                        <strong>Je veux</strong> créer un système de fetching de données
+                        <strong>Afin de</strong> gérer efficacement les appels API</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🪝 Task 8.3.1 : Créer les hooks de fetching personnalisés (useFetch/useQuery, useMutation)</p>
+                                <p class="text-gray-600 mt-2">Créer hook useFetch/useQuery avec cache données, re-fetching automatique, loading/error states, créer hook useMutation avec optimistic update et invalidation cache.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded border border-gray-200">
+                                <p class="font-semibold text-gray-900"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800 mr-2">❌ À faire</span>🔌 Task 8.3.2 : Intégrer dans l'application (remplacer appels fetch directs, tester cache et mise à jour)</p>
+                                <p class="text-gray-600 mt-2">Remplacer tous les appels fetch directs par les hooks personnalisés dans l'application et tester le cache et la mise à jour des données.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Résumé -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-500">
+                <h2 class="text-2xl font-bold text-gray-700 mb-6">📊 Résumé des Épics</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Epic</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User Stories</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Priorité</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 1: Configuration</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">6</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">🔴 Critique</span></td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 2: Simulation</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">3</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">🔴 Critique</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 3: Demande</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">3</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">🔴 Critique</span></td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 4: Espace Admin</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">6</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">🔴 Critique</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 5: Notifications</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">2</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">🟡 Important</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 6: Validation/Erreurs</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">2</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">🟡 Important</span></td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 7: Documentation</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">2</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">🟢 Nécessaire</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Epic 8: Bonus</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">3</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800">🔵 Optionnel</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes JIRA -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-400">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">📝 Notes pour JIRA</h2>
+                <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                    <li>Créer un projet JIRA nommé "Salefni"</li>
+                    <li>Créer les 9 Epics dans JIRA</li>
+                    <li>Pour chaque Epic, créer les User Stories correspondantes</li>
+                    <li>Pour chaque User Story, créer les Tasks (les sub-tasks peuvent être des points de vérification ou checklist)</li>
+                    <li>Configurer les liens entre GitHub et JIRA</li>
+                    <li>Mettre en place des règles d'automatisation (ex: transition automatique lors d'un commit)</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">📋 Planification JIRA - Salefni | Solution de Simulation et Gestion des Crédits en Ligne</p>
+            <p class="text-xs mt-2 text-gray-500">Généré depuis PLANIFICATION_JIRA.md</p>
+        </div>
+    </footer>
+</body>
+</html>
+
